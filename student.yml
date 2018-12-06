@@ -1,0 +1,27 @@
+---
+studentDetails: 
+  - name: tirupathi
+    phNO: 89898989
+    course: devops
+    address: 
+      street: kphp
+      doorNo: 2
+      city: hyd
+      pin: 500072
+  - name: shravaya
+    phNO: 8889789898
+    course: devops
+    address: 
+      street: 1
+      doorNo: 56
+      city: hyd
+      pin: 500072
+  - name: manasa
+    phNO: 8889789898
+    course: devops
+    address: 
+      street: 2
+      doorNo: 56
+      city: hyd
+      pin: 500072
+    
