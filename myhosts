@@ -1,10 +1,14 @@
 172.31.80.113
+172.31.80.114
 
 
 [webservers]
 172.31.80.113
 172.31.87.224
 
+[webservers:vars]
+webredpack=httpd
+webubuntupack=apache2
 
 [applicationservers]
 172.31.80.3
