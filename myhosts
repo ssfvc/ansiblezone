@@ -5,6 +5,7 @@
 [webservers]
 172.31.80.113
 172.31.87.224
+172.31.34.109
 
 
 [applicationservers]
