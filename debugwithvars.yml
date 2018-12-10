@@ -1,0 +1,15 @@
+---
+- hosts: webservers
+  become: yes
+  vars:
+    var1: naveena
+    var2: shravya
+    var3: tirupathi
+  tasKs:
+  - name: display the var2
+    debug:
+      msg: "{{var2}}" 
+  - name: display group vars
+    debug:
+      msg: "{{mycomps}}"
+     
