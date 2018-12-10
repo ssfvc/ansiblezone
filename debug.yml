@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  become: yes
+  tasks: 
+  - name: des execute linux command on redhadddd
+    command: hostname -f
+    register: myresult
+    when: ansible_os_family =="RedHat"
+  - name: des display the mmmyresult
+    debug:
+      msg: "{{myresult}}"
