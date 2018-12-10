@@ -2,3 +2,5 @@
 webubuntupack: apache2
 webredpack:  httpd
 softwares: git
+javaonubuntu: openjdk-6-jre
+javaonredhat: java-1.6.0-openjdk
