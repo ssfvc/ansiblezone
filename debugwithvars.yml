@@ -5,7 +5,7 @@
     var1: naveena
     var2: shravya
     var3: tirupathi
-  tasKs:
+  tasks:
   - name: display the var2
     debug:
       msg: "{{var2}}" 
