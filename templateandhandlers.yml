@@ -1,5 +1,5 @@
 ---
-- hosts: redhatos
+- hosts: webservers
   become: yes
   tasks:
   - include_tasks: myfile.yml
@@ -7,11 +7,19 @@
     yum:
       name: httpd
       state: present
-      
+
   - name: start the httpd service
     service:
       name: httpd
       state: started
 
-  
+  - name: copy file(index.html) into all nodes
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html
+
+  - name: restart the httpd service
+    service:
+      name: httpd
+      start: restarted
       
