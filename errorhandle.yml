@@ -1,0 +1,13 @@
+---
+- hosts: redhatos
+  become: yes
+  tasks: 
+  - name: install git 
+    yum:
+      namee: git
+      state: present
+    
+  - name: install wget
+    yum:
+      name: wget
+      state: present
