@@ -1,0 +1,17 @@
+---
+- hosts: redhatos
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
+  - name: install webserver on redhat 
+    yum:
+      name: httpd
+      state: present
+      
+  - name: start the httpd service
+    service:
+      name: httpd
+      state: started
+
+  
+      

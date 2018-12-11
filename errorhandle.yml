@@ -12,3 +12,4 @@
     yum:
       name: wget
       state: present
+    ignore_errors: yes
