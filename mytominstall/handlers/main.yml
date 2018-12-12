@@ -1,2 +1,6 @@
 ---
 # handlers file for mytominstall
+- name: starttomcat
+  service:
+    name: tomcat
+    state: started
