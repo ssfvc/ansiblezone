@@ -1,7 +1,14 @@
 ---
 # tasks file for mytomdeploy
+- name: remove exist mahalogin files and folders
+  file:
+    path: /usr/share/tomcat/webapps/{{ item }}
+    state:  absent
+  with_items:
+    -  mahaLogin
+    -  mahaLogin.war
 
-
+  
 - name: deploy the java application on tomcat application server 
   get_url:
     url: https://s3.amazonaws.com/maha4iac/mahaLogin.war
